@@ -4,17 +4,11 @@ public class Characterr {
 	
 	protected String name;
 	protected int hillPoint = 20;
-	protected int damage;
+	protected int damage = 1;
 	protected int recuperation = 0;
 	
-	public Characterr(String name, int damage) {
+	public Characterr(String name) {
 		this.name = name;
-		this.damage = damage;
-	}
-	
-	public int takeAway(int damag) {
-		hillPoint = hillPoint - damag;
-		return hillPoint;
 	}
 	
 	public String getName() {

@@ -1,14 +1,23 @@
 package server.andr.domians;
 
+import java.util.List;
+
+import server.andr.domians.characters.Characterr;
+
 public class Player {
 	private String name;
-	private int hillPoint = 20;
+	private int hillPoint;
+	private List<Characterr> hand;
 	
-	public void Player(String name) {
+	public Player(String name) {
 		this.name = name;
 	}
 	
-	public int getHillPoint() {
-		return hillPoint;
-	} 
+	public void addCard(Characterr characterr) {
+		hand.add(characterr);
+	}
+	
+	public String getName() {
+		return name;
+	}
 }
